@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="7"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/logodrinkapp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_outline_textview"
+                android:gravity="center"
+                android:text="@string/size"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/rbGroupSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_outline_textview"
+                android:gravity="center"
+                android:text="@string/tortilla"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/rbGroupTortilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"
+        android:background="@drawable/custom_outline_textview"
+        android:gravity="center"
+        android:text="@string/fillings"
+        android:textSize="25sp" />
+
+    <GridLayout
+        android:id="@+id/gridFillings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:columnCount="3">
+
+
+    </GridLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_weight="0"
+        android:background="@drawable/custom_outline_textview"
+        android:gravity="center"
+        android:text="@string/beverage"
+        android:textSize="25sp" />
+
+    <GridLayout
+        android:id="@+id/gridBeverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:columnCount="2">
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="50sp"
+        android:text="@string/place_your_order"
+        android:textAllCaps="false"
+        android:textColor="#F9F8FB"
+        android:textSize="25sp" />
+</LinearLayout>
